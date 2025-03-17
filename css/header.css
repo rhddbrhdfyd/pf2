@@ -1,0 +1,106 @@
+/* Header 영역 */
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  border-bottom: 1px solid #858585;
+}
+
+header:hover {
+  /*! background-color: #fff; */
+}
+
+header nav{
+  align-items: center;
+  height: 80px;
+}
+
+header:hover nav {
+  color:#b0b0f7;
+}
+
+header nav h1{
+  
+}
+header nav h1 a{
+  
+}
+
+header .wrap {
+  
+}
+header .gnb {
+  
+  height: 100%;
+}
+header .gnb > li {
+  
+}
+header .gnb a {
+  
+  padding: 0 40px;
+  height: calc(100% - 2px);
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  border-bottom: 5px solid transparent;
+}
+
+header .gnb a:hover {
+  color:#bbf;
+  
+  border-bottom: 5px solid;
+}
+
+header .gnb li:hover > a {
+}
+header .submenu{
+  
+  display: none;
+}
+
+header .gnb > li:hover .submenu {
+  
+}
+header .gnb .submenu li{
+  
+}
+header .gnb .submenu a {
+  
+}
+
+/* 기타메뉴 */
+
+header .etc {
+  
+}
+
+header .etc li{
+  
+  position: relative;
+}
+
+header .etc li:nth-child(1)::after{
+  
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 30px;
+  top: calc(50% - 1px);
+  right: -1px;
+}
+
+header .etc li a {
+  
+  padding: 0 5px;
+  color: #f0f0f0;
+  transition: 0.3s;
+}
+
+header .etc li a:hover {
+  
+  color: white;
+}

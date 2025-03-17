@@ -1,0 +1,55 @@
+#business {  
+
+  background-color: #d6d6d6;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/section2_bg6.jpg);
+}  
+#business .wrap {  
+
+}  
+#business h2.hide { 
+
+}  
+#business ul.flex {  
+
+}  
+#business ul {  
+
+}  
+#business ul li {  
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}  
+
+#business ul li:not(first-child) {
+  /*! display: none; */
+}
+
+#business ul li h3.h1 {  
+
+  color: white;
+}  
+
+#business ul li h3.h1::before{
+  
+}
+
+#business ul li p.p {  
+
+  order: 3;
+  color: white;
+}  
+#business ul li a.menu {  
+    
+  order: 2;
+  margin-bottom: 26px;
+
+  color: #fff;
+}  
+
+#business ul li a.menu::after{
+  
+}

@@ -1,0 +1,119 @@
+/* 타이틀 영역 */
+#title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../img/jpg/Power-plant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#title::after{
+  content: "";
+  background-image: url(../img/svg/wave.svg);
+  background-size: cover;
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  bottom: 0;
+  opacity: 0;
+}
+  
+#title .wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  z-index: 1;
+}
+
+#title h2.h1{
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 20px;
+  align-self: end;
+}
+
+
+#title p.titlep {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#title nav {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+#title ul {
+  
+}
+
+#title ul li {
+  width: 150px;
+  height: 150px;
+  /*! border: 1px solid gray; */
+  transform: translateX(60px);
+}
+#title nav ul li a{
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    display: block;
+}
+#title ul li a h2.menu {
+    
+  color: #fff;
+}
+
+#title nav ul li a::before{
+  content: "";
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-4px);
+}
+#title nav ul li:nth-child(1) a::before{
+  background-image: url(../img/svg/building.svg);
+}
+#title nav ul li:nth-child(2) a::before{
+  background-image: url(../img/svg/graph.svg);
+}
+#title nav ul li:nth-child(3) a::before{
+  background-image: url(../img/svg/justice.svg);
+}
+#title nav ul li:nth-child(4) a::before{
+  background-image: url(../img/svg/employee.svg);
+}
+#title nav ul li a::after{
+  content: "";
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/svg/arrow.svg);
+}
+#title nav ul li a p.sm{
+  display: none;
+}
+
+
+#title video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
